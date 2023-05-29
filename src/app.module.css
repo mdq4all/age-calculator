@@ -1,0 +1,16 @@
+
+.container {
+    background-color: hsl(0, 0%, 100%);
+    width: 300px;
+    padding: 25px;
+    border-radius: 25px 25px 130px 25px;
+    margin: 2vw;
+}
+@media (min-width: 600px) {
+    .container {
+        width: 600px;
+        padding: 40px;
+        border-radius: 25px 25px 160px 25px;
+
+    }
+}

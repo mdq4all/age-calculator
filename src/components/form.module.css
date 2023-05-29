@@ -1,0 +1,104 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input_container{
+    position: relative;
+    height: 120px;
+    margin: 20px 0 10px 0;
+}
+.label {
+    display: block;
+    color: hsl(0, 1%, 44%);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    margin: 5px 0;
+}
+.label_error {
+    color: hsl(0, 100%, 67%);
+    opacity: .8;
+}
+.input {
+    width: 65px;
+    height: 35px;
+    border-radius: 7px;
+    border: 1px solid hsla(0, 1%, 44%, 0.5);
+    padding: 10px 12px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.input_error {
+    border: 1px solid  hsl(0, 100%, 67%);
+    opacity: .6;
+}
+.input::placeholder {
+    color: hsla(0, 1%, 44%, 0.5);
+}
+.input:focus {
+    border: 1px solid hsla(259, 100%, 65%, 0.5);
+    outline: none;
+}
+.submit_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.submit_container hr {
+    position: absolute;
+    width: 100%;
+    top: 40px;
+    color: hsla(0, 1%, 44%, 0.5);
+}
+.icon_arrow, .icon_arrow:active {
+    background: hsl(259, 100%, 65%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+.icon_arrow:hover {
+    background: hsl(0, 0%, 8%);
+}
+.icon_arrow img {
+    width: 35px;
+}
+.hide {
+    display: none;
+}
+.error_p {
+    position: absolute;
+    bottom: 0;
+    font-style: italic;
+    font-size: 11px;
+    color: hsl(0, 100%, 67%);
+    opacity: .6;
+}
+/******************************* Media query **************************************/
+
+@media (min-width: 600px) {
+    .container {
+        width: 400px;
+    }
+    .input {
+        width: 95px;
+        font-size: 26px;
+    }
+    .input_container {
+        height: 105px;
+    }
+    .submit_container {
+       justify-content: flex-end;
+    }
+}

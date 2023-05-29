@@ -1,0 +1,11 @@
+.container {
+    padding: 25px 0;
+}
+
+/************************ Media Query  ************************************/
+
+@media (min-width: 600px) {
+    .container {
+        padding: 0;
+    }
+}
